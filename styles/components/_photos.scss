@@ -1,0 +1,16 @@
+
+.photos{
+    padding-top: 150px;
+    min-height: 100vh;
+    // background-color: black;
+    &__wrapper {
+        display: flex;
+        padding: 100px;
+        img {
+            max-height: 300px;
+        }
+        .photo-wrapper {
+            margin: 20px;
+        }
+    }
+}

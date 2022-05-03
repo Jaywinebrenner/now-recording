@@ -11,7 +11,10 @@
   "dependencies": {
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-ig-feed": "^1.0.4",
+    "react-modal": "^3.14.4",
+    "sass": "^1.50.1"
   },
   "devDependencies": {
     "eslint": "8.14.0",

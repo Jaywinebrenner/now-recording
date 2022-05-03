@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+@import "components/home";
+@import "components/equipment";
+@import "components/about";
+@import "components/photos";
+@import "components/music";
+@import "components/nav";

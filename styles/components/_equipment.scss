@@ -1,0 +1,17 @@
+
+.equipment {
+    // height: 100vh;
+    // background-color: black;
+    h1 {
+        margin: 0;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white!important;
+        // border: black 10px solid;
+        height: 100%;;
+    }
+}
+
