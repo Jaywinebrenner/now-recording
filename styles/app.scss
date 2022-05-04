@@ -5,9 +5,31 @@ body {
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  a{
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 600;
+    &:hover {
+      opacity: .6;
+      cursor: pointer;
+    }
+  }
+
+  li {
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 600;
+    &:hover {
+      // opacity: .6;
+      // cursor: pointer;
+    }
+  }
+
 @import "components/home";
 @import "components/equipment";
 @import "components/about";
 @import "components/photos";
 @import "components/music";
 @import "components/nav";
+@import "components/nav-two";
+@import "components/layout";

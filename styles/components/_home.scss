@@ -52,6 +52,7 @@
         background-color: black;
         background-size: contain;
         background-position: 50% 0;
+        pointer-events: none;
         img {
             width: 100px;
         }
@@ -119,8 +120,11 @@
               font-size: 9rem;
               @media (max-width: 1180px) {
                   font-size: 5rem;
+              }
+              @media (max-width: 440px) {
+                font-size: 4rem;
+              }
           }
-        }
       }
     }
   }
@@ -132,6 +136,9 @@
 .modal-content {
     position: relative;
     text-align: center;
+    img {
+      width: 200px;
+    }
 }
 .Overlay {
     position: fixed;
@@ -140,17 +147,25 @@
     right: 0;
     bottom: 0;
     background-color: black;
+
     .x-wrapper {
       position: absolute;
       top: -4px;
       font-size: 50px;
       left: 16px;
       cursor: pointer;
+      @media (max-width: 850px) {
+        top: 20px;
+        left: 38px;
+      }
     }
   }
   .ReactModal__Content--after-open {
-    height: 80%;
-    width: 80%;
+    @media (max-width: 850px) {
+      height: 100%!important;
+      width: 100%!important;
+    }
   }
+
 
   

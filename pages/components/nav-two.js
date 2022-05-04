@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from "next/router";
 import Modal from 'react-modal';
 
-export default function Nav() {
+export default function NavTwo() {
 
     const customStyles = {
         content: {
@@ -67,29 +67,69 @@ export default function Nav() {
 
 
   return (
-        <div className="nav">
-            <div className="nav-logo-wrapper">
-                <Link className="nav__link" href="/">
-                    <img className="nav__logo" src="/nav-now.jpg"/>
+        <div className="nav-two">
+
+            <div className="nav-two__one">
+                <Link className="nav-two__link" href="/">
+                    <div className="nav-two-logo-wrapper">
+            
+                        <p>RECORDING</p>
+                    </div>
                 </Link> 
-                <p>RECORDING</p>
             </div>
-            {
+
+            <div className="nav-two__two">
+            <div className="link">
+                <div onClick={()=> handleSetActive("photos")}>
+                    <Link className="nav-two__link" href="/photos">
+                        <h1 className={`${router.pathname === "/photos" ? "active" : ""}`}>PHOTOS</h1>
+                    </Link> 
+                </div>
+            </div>
+            <div className="link">
+                <div onClick={()=> handleSetActive("music")}>
+                    <Link className="nav-two__link" href="/music">
+                        <h1 className={`${router.pathname === "/music" ? "active" : ""}`}>MUSIC</h1>
+                    </Link> 
+                </div>
+            </div>
+
+            </div>
+            <div className="nav-two__three">
+            <div className="link">
+                <div onClick={()=> handleSetActive("equipment")}>
+                    <Link className="nav-two__link" href="/equipment">
+                        <h1 className={`${router.pathname === "/equipment" ? "active" : ""}`}>EQUIPMENT</h1>
+                    </Link> 
+                </div>
+            </div>
+            <div className="link">
+                <div onClick={()=> handleSetActive("about")}>
+                    <Link className="nav-two__link" href="/about">
+                        <h1 className={`${router.pathname === "/about" ? "active" : ""}`}>ABOUT</h1>
+                    </Link> 
+                </div>
+            </div>
+            <div className="link">
+                <h1 onClick={openModal}>CONTACT</h1>
+            </div>
+
+            </div>
+
+            {/* {
                 navLinks.map((l) => {
                     return (
                         <>
                         <div onClick={()=> handleSetActive(l.text.toLowerCase())}>
-                            <Link className="nav__link" href={l.href}>
+                            <Link className="nav-two__link" href={l.href}>
                                 <h1 className={`${router.pathname === "/" + l.text.toLowerCase() ? "active" : ""}`}>{l.text}</h1>
                             </Link> 
                         </div>
                         </>
                     )
                 })
-            }
-            <div>
-                <h1 onClick={openModal}>CONTACT</h1>
-            </div>
+            } */}
+  
                 <Modal
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}

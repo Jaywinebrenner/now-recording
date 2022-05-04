@@ -1,13 +1,14 @@
 
 .photos{
-    padding-top: 150px;
-    min-height: 100vh;
-    // background-color: black;
+
     &__wrapper {
         display: flex;
-        padding: 100px;
+        flex-wrap: wrap;
         img {
             max-height: 300px;
+            @media (max-width: 850px) {
+                max-height: 400px;
+             }
         }
         .photo-wrapper {
             margin: 20px;

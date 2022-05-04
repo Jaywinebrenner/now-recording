@@ -1,7 +1,6 @@
 
 import React, {useState, useEffect} from 'react';
-import Link from 'next/link';
-import Nav from './components/nav'
+import Layout from './components/layout'
 
 export default function Equipment() {
 
@@ -11,12 +10,19 @@ export default function Equipment() {
 
 
   return (
-    <div className="equipment">
-        <Nav/>
-        <div className="equipment__wrapper">
-            <div className="equipment__body">
-            </div>
-        </div>
-    </div>
+    <Layout>
+      <div className="equipment">
+          {/* <NavTwo/> */}
+          <div className="equipment__wrapper">
+            <ul>
+              <li>Tascam 420</li>
+              <li>Mesaboogie 666</li>
+              <li>SM69</li>
+            </ul>
+              <div className="equipment__body">
+              </div>
+          </div>
+      </div>
+    </Layout>
   )
 }

@@ -1,6 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
 import Link from 'next/link';
 import Modal from 'react-modal';
 import React, {useState, useEffect} from 'react';
@@ -83,9 +81,9 @@ export default function Home() {
       >
         <div onClick={() => closeModal()} className='x-wrapper'>x</div>
         <div className='modal-content'>
-          <p>Recording, mixing, and mastering services.
-Eric Crespo at the controls–working out of my home studio</p>
-          <h1>torchtoucherrecording@gmail.com</h1>
+          <img src="/now.jpg"/>
+          <p>Recording, mixing, and mastering services.</p>
+          <h1>entirelyoftin@gmail.com</h1>
         </div>
       </Modal>
 

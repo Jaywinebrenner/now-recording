@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import Nav from './components/nav'
+import Layout from './components/layout'
 
 export default function Photos() {
 
 
   return (
-    <>
-        <Nav/>
+    <Layout>
         <div className="photos">
             <div className="photos__wrapper">
 
@@ -19,9 +18,8 @@ export default function Photos() {
               <div className="photo-wrapper">
                 <img src="https://static.tvtropes.org/pmwiki/pub/images/bela_lugosi_as_dracula.jpeg"/>
               </div>
-
             </div>
         </div>
-      </>
+      </Layout>
   )
 }

@@ -7,28 +7,49 @@
     height: 150px;
     align-items: center;
     background-color: black;
+    .nav-logo-wrapper {
+        position: relative;
+        p {
+            color: white;
+            opacity: .4;
+            letter-spacing: 7px;
+            margin-top: 0;
+            
+        }
+    }
+    @media (max-width: 850px) {
+       flex-direction: column;
+       height: 500px;
+    }
     h1 {
         cursor: pointer;
         // background-color: white;
         color: white;
+        opacity: .4;
         padding: 20px;
-        width: 150px;
         font-size: 1.3rem;
         text-align: center;
+        @media (max-width: 850px) {
+            padding: 0;
+            margin: 0;
+         }
         &:hover {
             opacity: .6;
         }
+
     }
     &__link {
     }
     .active {
         // background-color: rgb(148, 18, 18);
-        color: rgb(148, 18, 18);
+        // color: rgb(148, 18, 18);
+        color: rgb(228, 22, 22);
         pointer-events: none;
     }
     &__logo {
         width: 150px;
         cursor: pointer;
     }
+
 
 }
