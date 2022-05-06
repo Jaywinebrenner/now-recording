@@ -14,7 +14,6 @@ const containerStyle = {
     width: "40%",
   }
  
-//note: code formatted for ES6 here
 export class MapContainer extends Component {
     state = {
       showingInfoWindow: false,

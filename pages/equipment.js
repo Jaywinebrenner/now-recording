@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect} from 'react';
+import React, { useEffect} from 'react';
 import Layout from './components/layout'
 
 export default function Equipment() {
@@ -8,11 +8,9 @@ export default function Equipment() {
 
   }, []);
 
-
   return (
     <Layout>
       <div className="equipment">
-          {/* <NavTwo/> */}
           <div className="equipment__wrapper">
             <ul>
               <li>Tascam 420</li>

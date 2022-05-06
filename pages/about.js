@@ -1,15 +1,10 @@
 
-import React, {useState, useEffect} from 'react';
-import Nav from './components/nav'
+import React from 'react';
 import Layout from './components/layout'
 import MapContainer from './components/map-container';
 
 
 export default function About() {
-  // const {isLoaded} = useLoadScript({ googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY, })
-
-
-
 
   return (
     <Layout>

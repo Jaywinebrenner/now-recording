@@ -38,8 +38,6 @@ export default function Home() {
 
   }, []);
 
-
-
   return (
     <div className="home">
       <div className="box a">
