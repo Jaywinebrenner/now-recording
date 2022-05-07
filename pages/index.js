@@ -30,7 +30,7 @@ export default function Home({props}) {
   }
 
   function closeModal() {
-    document.window.scrollTo(0, 0);
+    // document.window.scrollTo(0, 0);
     setIsOpen(false);
   }
 
@@ -82,8 +82,8 @@ export default function Home({props}) {
         <div onClick={() => closeModal()} className='x-wrapper'>x</div>
         <div className='modal-content'>
           <img src="/now.jpg"/>
-          <p>{props.blurb}</p>
-          <h1>{props.email}</h1>
+          <p>{props[0].acf.blurb}</p>
+          <h1>{props[0].acf.email}</h1>
         </div>
       </Modal>
 
