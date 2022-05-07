@@ -17,7 +17,7 @@ export default function Music({props}) {
               {
                 props[0].acf.artist.map((a, i) => {
                   return (
-                    <a key={`artist-key=${i}`} target="_blank" href={a.url}>{a.artist}</a>
+                    <a key={`artist-key=${i}`} rel="noreferrer" target="_blank" href={a.url}>{a.artist}</a>
                   )
                 })
               } 
