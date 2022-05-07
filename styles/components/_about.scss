@@ -1,6 +1,21 @@
 
 .about{
-    &__wrapper {
+        div:nth-of-type(2){
+            margin-top: 40px;
+            position: relative;
+            margin-bottom: 30px;
+            div {
+            
+                // height: auto!important;
+                // width: auto;
+                // left:0;
+                // right:0;
+                // margin-left: auto;
+                // margin-right: auto;
+                // width: 40%;
+            }
+        }
+    .map {
 
     }
 }

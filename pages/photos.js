@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from './components/layout'
 
+
 export default function Photos({props}) {
 
   // console.log("Props PHOTOS PAGE", props[0].acf);
@@ -32,6 +33,7 @@ export default function Photos({props}) {
               </div> */}
             </div>
         </div>
+
       </Layout>
   )
 }

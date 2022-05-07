@@ -6,12 +6,13 @@ const containerStyle = {
     position: 'relative',  
     width: '300px',
     height: '300px',
-    left: '0',
-    right: '0',
+    // left: '0',
+    // right: '0',
+    display: 'block',
     marginLeft: 'auto',
     marginRight: "auto",
-    position: "absolute",
-    width: "40%",
+    // position: "absolute",
+    // width: "40%",
   }
  
 export class MapContainer extends Component {
