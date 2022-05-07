@@ -5,9 +5,10 @@
         display: flex;
         flex-wrap: wrap;
         img {
-            max-height: 300px;
+            height: 300px;
             @media (max-width: 850px) {
-                max-height: 400px;
+                height: unset;
+                width: 100%;
              }
         }
         .photo-wrapper {

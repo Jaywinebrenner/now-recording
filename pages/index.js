@@ -19,7 +19,9 @@ const customStyles = {
   },
 };
 
-export default function Home() {
+export default function Home({props}) {
+
+  console.log("Props INDEX PAGE", props[0].acf);
 
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -28,6 +30,7 @@ export default function Home() {
   }
 
   function closeModal() {
+    document.window.scrollTo(0, 0);
     setIsOpen(false);
   }
 
@@ -35,7 +38,6 @@ export default function Home() {
     let home = document.querySelector(".home");
     console.log("home", home);
     home.classList.add("grid-animation");
-
   }, []);
 
   return (
@@ -80,11 +82,23 @@ export default function Home() {
         <div onClick={() => closeModal()} className='x-wrapper'>x</div>
         <div className='modal-content'>
           <img src="/now.jpg"/>
-          <p>Recording, mixing, and mastering services.</p>
-          <h1>entirelyoftin@gmail.com</h1>
+          <p>{props.blurb}</p>
+          <h1>{props.email}</h1>
         </div>
       </Modal>
 
     </div>
   )
+}
+
+export async function getServerSideProps() {
+
+  const res = await fetch("https://nowrecording.jaywinebrenner.com/wp-json/wp/v2/pages");
+  let props = await res.json()
+
+  return {
+    props: {
+      props
+    },
+  };
 }
