@@ -3,7 +3,7 @@ import Layout from './components/layout'
 
 export default function Photos({props}) {
 
-  console.log("Props PHOTOS PAGE", props[0].acf);
+  // console.log("Props PHOTOS PAGE", props[0].acf);
 
   return (
     <Layout>
