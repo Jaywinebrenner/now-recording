@@ -15,9 +15,9 @@ export default function Music({props}) {
               <a>Ted Nugent</a> */}
               
               {
-                props[0].acf.artist.map((a) => {
+                props[0].acf.artist.map((a, i) => {
                   return (
-                    <a target="_blank" href={a.url}>{a.artist}</a>
+                    <a key={`artist-key=${i}`} target="_blank" href={a.url}>{a.artist}</a>
                   )
                 })
               } 

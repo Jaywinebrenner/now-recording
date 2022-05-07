@@ -75,10 +75,10 @@ export default function Nav() {
                 <p>RECORDING</p>
             </div>
             {
-                navLinks.map((l) => {
+                navLinks.map((l, i) => {
                     return (
                         <>
-                        <div onClick={()=> handleSetActive(l.text.toLowerCase())}>
+                        <div key={`navlink-key=${i}`} onClick={()=> handleSetActive(l.text.toLowerCase())}>
                             <Link className="nav__link" href={l.href}>
                                 <h1 className={`${router.pathname === "/" + l.text.toLowerCase() ? "active" : ""}`}>{l.text}</h1>
                             </Link> 

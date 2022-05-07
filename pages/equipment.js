@@ -19,10 +19,10 @@ export default function Equipment({props}) {
               <li>Mesaboogie 666</li>
               <li>SM69</li>  */}
               {
-                props[0].acf.equipment.map((e) => {
+                props[0].acf.equipment.map((e, i) => {
                   return (
                     <>
-                      <li>{e.piece}</li>
+                      <li key={`equipment-key=${i}`}>{e.piece}</li>
                     </>
                   )
                 })

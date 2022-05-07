@@ -11,9 +11,9 @@ export default function Photos({props}) {
             <div className="photos__wrapper">
 
               {
-                  props[0].acf.photos.map((p) => {
+                  props[0].acf.photos.map((p, i) => {
                     return (
-                      <div className="photo-wrapper">
+                      <div key={`photo-key=${i}`} className="photo-wrapper">
                         <img src={p.photo}/>
                         <p>{p.caption}</p>
                       </div>
